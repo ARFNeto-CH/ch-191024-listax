@@ -6,7 +6,7 @@
 #include	<stdlib.h>
 #include	<string.h>
 #include    "malloc.h"
-#include	"minha_lista.h"
+#include	"minha_lista_v.h"
 
 
 int			apaga_registro(int(*criterio)(Registro*, Registro*), Registro* exemplo, Lista** pLista)
@@ -28,7 +28,7 @@ int			apaga_registro(int(*criterio)(Registro*, Registro*), Registro* exemplo, Li
 		//printf(
 		//	"    %4d: nome:'%s' sobrenome:'%s' RG: %d\n",
 		//	n, p->r->nome, p->r->sobrenome, p->r->RG);
-		if ( criterio( (p->r), exemplo) )
+		if (criterio((p->r), exemplo))
 			return remove_item(p, pLista);	// chama a funcao que remove a chave p
 		p = p->proximo;
 	} while (p != NULL);
@@ -40,8 +40,8 @@ int			apaga_registro(int(*criterio)(Registro*, Registro*), Registro* exemplo, Li
 int			da_um_fim_na_lista(Lista** lista)
 {
 	int		n = 0;					// conta os itens apagados
-	Lista*		p = *lista;
-	Lista*		proximo;
+	Lista* p = *lista;
+	Lista* proximo;
 
 	if ((lista == NULL) || (p == NULL))	return -1;	// nao existe lista
 	if (p->r == NULL)
@@ -69,9 +69,9 @@ int			insere_ao_final(Registro* r, Lista** ppLista)
 	// essa funcao insere sempre no final da lista
 	Lista* node = (Lista*)malloc(sizeof(Lista));	// aloca o item
 	node->r = (Registro*)malloc(sizeof(Registro));
-	memcpy( node->r, r, sizeof(Registro));
+	memcpy(node->r, r, sizeof(Registro));
 	node->proximo = NULL;
-	if ( *ppLista == NULL)
+	if (*ppLista == NULL)
 	{	// no inicio: insere o primeiro
 		*ppLista = node;	// novo inicio da lista
 		return 1;
@@ -84,33 +84,12 @@ int			insere_ao_final(Registro* r, Lista** ppLista)
 }	// end insere_registro()
 
 
-int mostra(int(*motra_um)(Registro*), Lista** lista)
-{
-	int		n = 0;					// conta os itens apagados
-	Lista* p = *lista;
-
-	if ((lista == NULL) || (p == NULL))	return -1;	// nao existe lista
-	if (p->r == NULL)
-	{
-		return 0;
-	}	// end if
-
-	do  
-	{	
-		mostra_um(p->r);
-		p = p->proximo;				// vai pro proximo
-		n = n + 1;					// conta esse
-	} while (p != NULL);			// e continua 
-	return n;
-}	// end mostra()
-
-
 int insere_na_ordem(int(*criterio)(Registro*, Registro*), Registro* novo, Lista** ppLista)
 {
 	// usando a funcao fornecida, insere o registro na ordem
 	if (ppLista == NULL) return -1;
 	Lista* node = (Lista*)malloc(sizeof(Lista));	// cria o elemento na lista
-	node->r =	(Registro*)malloc(sizeof(Registro));	// cria o registro
+	node->r = (Registro*)malloc(sizeof(Registro));	// cria o registro
 	memcpy(node->r, novo, sizeof(Registro));		// copia os dados
 	node->proximo = NULL;
 	if (*ppLista == NULL)
@@ -121,10 +100,10 @@ int insere_na_ordem(int(*criterio)(Registro*, Registro*), Registro* novo, Lista*
 	//
 	// a lista nao esta vazia: procura o posicao
 	//
-	Lista*	p = *ppLista;
-	Lista*	anterior = NULL;
+	Lista* p = *ppLista;
+	Lista* anterior = NULL;
 	//
-	while( 1 )
+	while (1)
 	{
 		if (criterio(p->r, novo) <= 0)
 		{
@@ -152,14 +131,14 @@ int insere_na_ordem(int(*criterio)(Registro*, Registro*), Registro* novo, Lista*
 		}
 		return 1;
 	};	// end while
-	
+
 	p->proximo = node;		// o anterior agora aponta para esse
 	return 1;
 	return 0;
 }
 
 
-Registro*	pesquisa_registro(int(*criterio)(Registro*, Registro*), Registro* exemplo,  Lista** pLista)
+Registro* pesquisa_registro(int(*criterio)(Registro*, Registro*), Registro* exemplo, Lista** pLista)
 {
 	Lista* lista = *pLista;
 	// pesquisar e como apagar, apenas ao localizar ao inves
@@ -170,7 +149,7 @@ Registro*	pesquisa_registro(int(*criterio)(Registro*, Registro*), Registro* exem
 	int n = 0;							// se estivesse vazio ja teria retornado 0
 	do
 	{	// se enontrou retorna o endereco. so isso
-		if (criterio( (p->r), exemplo))	return p->r;
+		if (criterio((p->r), exemplo))	return p->r;
 		p = p->proximo;
 	} while (p != NULL);
 	return NULL;						// nao achou afinal

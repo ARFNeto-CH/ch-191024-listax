@@ -77,6 +77,37 @@ int		a_teste_na_ordem_A(int tamanho_do_teste)
 }
 
 
+int		a_teste_mostra(int tamanho_do_teste)
+{
+	Lista* pLista = NULL;			// um ponteiro para a lista	
+	int		n;
+	char* nome_teste = "Johnny";
+	char* sobrenome_teste = "Cash";
+	int		rg = tamanho_do_teste;
+
+	Registro	 r;
+	strcpy(r.nome, nome_teste);
+	strcpy(r.sobrenome, sobrenome_teste);
+
+	for (int i = 1; i <= tamanho_do_teste; i++)
+	{
+		r.RG = i;
+		printf("    RG = %d\n", r.RG);
+		insere_na_ordem(compare_RG, &r, &pLista);
+	}
+	n = mostra_lista(pLista);			// NULL
+	printf("mostra_lista() retornou %d\n", n);
+
+	n = mostra(mostra_um, &pLista);
+	printf("mostra() retornou %d\n", n);
+
+	n = da_um_fim_na_lista(&pLista);
+	printf("da_um_fim_na_lista() retornou %d\n", n);
+
+	return 0;
+}	// end a_teste_mostra()
+
+
 int		a_teste_na_ordem_D(int tamanho_do_teste)
 {
 	Lista* pLista = NULL;			// um ponteiro para a lista	
@@ -100,7 +131,7 @@ int		a_teste_na_ordem_D(int tamanho_do_teste)
 	n = da_um_fim_na_lista(&pLista);
 
 	return 0;
-}
+}	// end a_teste_na_ordem_D()
 
 
 int		a_teste_na_ordem_R(int tamanho_do_teste)
@@ -130,7 +161,7 @@ int		a_teste_na_ordem_R(int tamanho_do_teste)
 	printf("da_um_fim_na_lista() retornou %d\n", n);
 
 	return 0;
-}
+}	// end a_teste_na_ordem_R()
 
 
 int		a_teste_n(const int tamanho_do_teste)
@@ -228,8 +259,6 @@ int		a_teste_pesquisa(int busca, int tamanho_do_teste)
 }
 
 
-
-
 int		a_teste_remove(int tamanho_do_teste)
 {
 	Lista* pLista = NULL;
@@ -279,6 +308,7 @@ int		main(int argc, char** argv)
 	//a_teste_na_ordem_D(15);
 	//a_teste_na_ordem_R(15);
 	a_teste_remove(15);
+	a_teste_mostra(15);
 	return  0;
 }	// end main()
 
@@ -335,7 +365,7 @@ int			mostra_lista( Lista* pLista)
 int			mostra_um(Registro* r)
 {
 	printf(
-		"nome:'%s' sobrenome:'%s' RG: %d\n",
+		"Registro: ['%s','%s' RG: %d]\n",
 		r->nome, r->sobrenome, r->RG);
 	return 0;
 }

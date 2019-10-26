@@ -15,24 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch-191024-lista.c">
+    <ClCompile Include="ch-191025v.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="minha_lista.c">
+    <ClCompile Include="minha_lista_v.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="meu_registro.h">
+    <ClInclude Include="minha_lista_v.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="minha_lista.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="meu_registro_2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="meu_registro3.h">
+    <ClInclude Include="meu_registro_v.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

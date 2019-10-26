@@ -1,3 +1,4 @@
+// meu_registro2.h
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS
 #include	"memory.h"
@@ -8,11 +9,13 @@
 
 struct registro
 {
+	int		CPF;
 	int		RG;
+	char	CEP[9];
 	char	nome[20];
 	char	sobrenome[20];
 };
 
 typedef struct registro Registro;
 
-// fim de meu_registro.h
+// fim de meu_registro2.h
