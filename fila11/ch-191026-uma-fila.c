@@ -33,7 +33,8 @@ int			main(int argc, char** argv)
 	inicia_trabalhos();
 	//char* rotina = "LNNNNNNNLAAAAAAALPPPAAAL";
 	//char* rotina = "LNNNPAALALAL";
-	char* rotina = "LNNNNPPPPLAAAAAAAL";
+	//char* rotina = "LNNNNPPPPLAAAAAAAL";
+	char* rotina = "LNNNNPPPPLAAAAAAAPPPPLAAALAL";
 	testa_rotina(rotina);
 	return 0;
 }	// end main()
