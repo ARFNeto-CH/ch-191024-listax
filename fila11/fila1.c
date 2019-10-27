@@ -52,6 +52,7 @@ int		atendimento()
 
 	sequencia += 1;				// marca atendimento afinal
 
+	// atendimento aqui
 	if (fila[a_atender] == PRIORIDADE)
 	{
 		printf(	"    ATENDENDO [%s] senha %03d [PRIORIDADE]\n",
@@ -68,7 +69,7 @@ int		atendimento()
 	fila[a_atender] = LIVRE;	// sabe-se que tem alguem na fila
 	move_a_fila(a_atender);
 	q_fila -= 1;
-	ja_atendidos += 1;
+	ja_atendidos = ja_atendidos + 1;
 	return 1;
 }	// end atendimento()
 
@@ -85,7 +86,7 @@ int		ciclo(char servico)
 	case NORMAL:
 		if (q_fila == CAPACIDADE)
 		{
-			printf("Sem mais senhas. Por favor AGUARDE\n");
+			printf("    SEM mais senhas. Por favor AGUARDE\n");
 			return -1;
 		}	// end if
 		q_fila += 1;
@@ -103,7 +104,7 @@ int		ciclo(char servico)
 	case PRIORIDADE:
 		if (q_fila == CAPACIDADE)
 		{
-			printf("Sem mais senhas. Por favor AGUARDE\n");
+			printf("    SEM mais senhas. Por favor AGUARDE\n");
 			return -1;
 		}	// end if
 		q_fila += 1;
@@ -133,18 +134,21 @@ int		ciclo(char servico)
 
 int		inicia_trabalhos()
 {
-	printf("***** iniciando expediente *****\n\n");
+	printf("***** iniciando expediente CAPACIDADE=%d CLIENTES *****\n\n", CAPACIDADE);
 
 	for (int i = 0; i < CAPACIDADE; i += 1)
 		cad[i].nome[0] = 0;
 
 	for (int i = 0; i < CAPACIDADE; i += 1)
 		fila[i] = LIVRE;
+
+	ja_atendidos = 0;
+
+
 	fila[0] = 'X';				// so para separar no debugger
 	q_fila_normal = 0;
 	q_fila_prioridade = 0;
 	q_fila = 0;
-	ja_atendidos = 0;
 
 	for (int i = 0; i < 5; i += 1)
 		ultimas_senhas[i] = SEM_CLIENTE;
@@ -188,7 +192,7 @@ q_fila, q_fila_normal, q_fila_prioridade);
 
 	if (ja_atendidos > 0)
 	{
-		printf("\nJa atendidos: %d. Ultimas 5 senhas chamadas:\n", ja_atendidos);
+		printf("\nJa atendidos: %d. Ultimas 5 senhas chamadas: ", ja_atendidos);
 		for (int i = 0; i < 5; i++)
 		{
 			if (ultimas_senhas[i] == SEM_CLIENTE)
@@ -196,6 +200,7 @@ q_fila, q_fila_normal, q_fila_prioridade);
 			else
 				printf("%3d  ", ultimas_senhas[i]);
 		};	// end for
+		printf("\n");
 
 		if (ultimas_senhas[0] > 0)
 			printf("\nUltima: %d\n", ultimas_senhas[0]);

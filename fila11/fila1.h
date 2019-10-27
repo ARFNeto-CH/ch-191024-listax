@@ -37,8 +37,8 @@ int			q_fila_normal;			// na fila normal
 int			q_fila_prioridade;		// na fila prioridade
 int			q_fila;					// todo mundo que esta na fila
 
-int			ultimas_senhas[5];		// o painel :) superfluo tambem
 int			ja_atendidos;			// ajuda a testar
+int			ultimas_senhas[5];		// o painel :) superfluo tambem
 
 
 // prototipos das funcoes
