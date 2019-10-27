@@ -1,0 +1,22 @@
+	struct cadastro {
+		char nome[50];
+		char prioridade;
+		char normal;
+		char pri;
+	};
+
+
+int main()
+{
+	struct cadastro cad[200];
+char opc, Ppri[200], Pnormal[200];
+int cont=-1, contp=0, j=0, tes=0, tes2=0, i;
+contp++;
+while (1)
+{
+	system("cls");
+	printf ("\n 1 - INSERIR\n");
+	printf ("\n 2 - LISTAR\n");
+	printf ("\n 3 - ATENDIMENTO\n");
+	printf ("\n 4 - SAIR\n");
+	opc=getche();
