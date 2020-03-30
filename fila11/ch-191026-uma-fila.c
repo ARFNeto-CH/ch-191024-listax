@@ -34,7 +34,8 @@ int			main(int argc, char** argv)
 	//char* rotina = "LNNNNNNNLAAAAAAALPPPAAAL";
 	//char* rotina = "LNNNPAALALAL";
 	//char* rotina = "LNNNNPPPPLAAAAAAAL";
-	char* rotina = "LNNNNPPPPLAAAAAAAPPPPLAAALAL";
+	//char* rotina = "LNNNNPPPPLAAAAAAAPPPPLAAALAL";
+	char* rotina = "A";
 	testa_rotina(rotina);
 	return 0;
 }	// end main()
@@ -49,6 +50,18 @@ int	testa_rotina(char* servico)
 	{
 		ciclo(servico[i]);
 	};	// end for
+
+
+	int matriz[10];
+	matriz[0] = 27102019;
+	printf("\nmatriz[0]=%d\n", matriz[0]);
+
+	int* m = &*matriz;
+	printf("\n[m = &*matriz] m=%d\n",*m);
+
+	m = &*&*&*&*&*&*&*&*&*&*&*&*&*&*matriz;
+	printf("[m = &*&*&*&*&*&*&*&*&*&*&*&*&*&*matriz] m=%d\n", *m);
+
 	return n;
 }	// end testa_rotina()
 

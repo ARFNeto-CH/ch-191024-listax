@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch-191025v.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="minha_lista_v.c">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -20,3 +20,332 @@ while (1)
 	printf ("\n 3 - ATENDIMENTO\n");
 	printf ("\n 4 - SAIR\n");
 	opc=getche();
+
+	
+M:\forum>fila A
+***** iniciando expediente CAPACIDADE=20 CLIENTES *****
+
+
+
+***** Rotina=[A] *****
+
+Total de acoes: 1
+
+    ATENDIMENTO: Fila Vazia
+
+M:\forum>
+
+
+M:\forum>fila NNNNPPPP
+***** iniciando expediente CAPACIDADE=20 CLIENTES *****
+
+
+
+***** Rotina=[NNNNPPPP] *****
+
+Total de acoes: 8
+
+    CADASTRADO 'Jose dos Santos de 2501 Jr.' com senha 501 na fila [Normal] pos=1
+    CADASTRADO 'Jose dos Santos de 2502 Jr.' com senha 502 na fila [Normal] pos=2
+    CADASTRADO 'Jose dos Santos de 2503 Jr.' com senha 503 na fila [Normal] pos=3
+    CADASTRADO 'Jose dos Santos de 2504 Jr.' com senha 504 na fila [Normal] pos=4
+    CADASTRADO 'Jose dos Santos de 2505 Jr.' com senha 505 na fila [Prioridade] pos=5
+    CADASTRADO 'Jose dos Santos de 2506 Jr.' com senha 506 na fila [Prioridade] pos=6
+    CADASTRADO 'Jose dos Santos de 2507 Jr.' com senha 507 na fila [Prioridade] pos=7
+    CADASTRADO 'Jose dos Santos de 2508 Jr.' com senha 508 na fila [Prioridade] pos=8
+
+M:\forum>
+
+M:\forum>fila NNNNPPPPL
+***** iniciando expediente CAPACIDADE=20 CLIENTES *****
+
+
+
+***** Rotina=[NNNNPPPPL] *****
+
+Total de acoes: 9
+
+    CADASTRADO 'Jose dos Santos de 2501 Jr.' com senha 501 na fila [Normal] pos=1
+    CADASTRADO 'Jose dos Santos de 2502 Jr.' com senha 502 na fila [Normal] pos=2
+    CADASTRADO 'Jose dos Santos de 2503 Jr.' com senha 503 na fila [Normal] pos=3
+    CADASTRADO 'Jose dos Santos de 2504 Jr.' com senha 504 na fila [Normal] pos=4
+    CADASTRADO 'Jose dos Santos de 2505 Jr.' com senha 505 na fila [Prioridade] pos=5
+    CADASTRADO 'Jose dos Santos de 2506 Jr.' com senha 506 na fila [Prioridade] pos=6
+    CADASTRADO 'Jose dos Santos de 2507 Jr.' com senha 507 na fila [Prioridade] pos=7
+    CADASTRADO 'Jose dos Santos de 2508 Jr.' com senha 508 na fila [Prioridade] pos=8
+
+---------- ---------- ---------- ----------
+
+Painel
+Tamanho da fila:......   8
+Normal:...............   4
+Prioritario: .........   4
+
+Fila (8 clientes):
+
+#  1: [Jose dos Santos de 2501 Jr.], Senha 501 [N]
+#  2: [Jose dos Santos de 2502 Jr.], Senha 502 [N]
+#  3: [Jose dos Santos de 2503 Jr.], Senha 503 [N]
+#  4: [Jose dos Santos de 2504 Jr.], Senha 504 [N]
+#  5: [Jose dos Santos de 2505 Jr.], Senha 505 [P]
+#  6: [Jose dos Santos de 2506 Jr.], Senha 506 [P]
+#  7: [Jose dos Santos de 2507 Jr.], Senha 507 [P]
+#  8: [Jose dos Santos de 2508 Jr.], Senha 508 [P]
+
+---------- ---------- ---------- ----------
+
+M:\forum>
+M:\forum>fila NNNNPPPPLAAAAAAA
+***** iniciando expediente CAPACIDADE=20 CLIENTES *****
+
+
+
+***** Rotina=[NNNNPPPPLAAAAAAA] *****
+
+Total de acoes: 16
+
+    CADASTRADO 'Jose dos Santos de 2501 Jr.' com senha 501 na fila [Normal] pos=1
+    CADASTRADO 'Jose dos Santos de 2502 Jr.' com senha 502 na fila [Normal] pos=2
+    CADASTRADO 'Jose dos Santos de 2503 Jr.' com senha 503 na fila [Normal] pos=3
+    CADASTRADO 'Jose dos Santos de 2504 Jr.' com senha 504 na fila [Normal] pos=4
+    CADASTRADO 'Jose dos Santos de 2505 Jr.' com senha 505 na fila [Prioridade] pos=5
+    CADASTRADO 'Jose dos Santos de 2506 Jr.' com senha 506 na fila [Prioridade] pos=6
+    CADASTRADO 'Jose dos Santos de 2507 Jr.' com senha 507 na fila [Prioridade] pos=7
+    CADASTRADO 'Jose dos Santos de 2508 Jr.' com senha 508 na fila [Prioridade] pos=8
+
+---------- ---------- ---------- ----------
+
+Painel
+Tamanho da fila:......   8
+Normal:...............   4
+Prioritario: .........   4
+
+Fila (8 clientes):
+
+#  1: [Jose dos Santos de 2501 Jr.], Senha 501 [N]
+#  2: [Jose dos Santos de 2502 Jr.], Senha 502 [N]
+#  3: [Jose dos Santos de 2503 Jr.], Senha 503 [N]
+#  4: [Jose dos Santos de 2504 Jr.], Senha 504 [N]
+#  5: [Jose dos Santos de 2505 Jr.], Senha 505 [P]
+#  6: [Jose dos Santos de 2506 Jr.], Senha 506 [P]
+#  7: [Jose dos Santos de 2507 Jr.], Senha 507 [P]
+#  8: [Jose dos Santos de 2508 Jr.], Senha 508 [P]
+
+---------- ---------- ---------- ----------
+    ATENDENDO [Jose dos Santos de 2505 Jr.] senha 505 [PRIORIDADE]
+    ATENDENDO [Jose dos Santos de 2501 Jr.] senha 501 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2502 Jr.] senha 502 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2506 Jr.] senha 506 [PRIORIDADE]
+    ATENDENDO [Jose dos Santos de 2503 Jr.] senha 503 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2504 Jr.] senha 504 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2507 Jr.] senha 507 [PRIORIDADE]
+
+M:\forum>
+
+
+
+***** Rotina=[NNNNPPPPLAAAAAAAL] *****
+
+Total de acoes: 17
+
+    CADASTRADO 'Jose dos Santos de 2501 Jr.' com senha 501 na fila [Normal] pos=1
+    CADASTRADO 'Jose dos Santos de 2502 Jr.' com senha 502 na fila [Normal] pos=2
+    CADASTRADO 'Jose dos Santos de 2503 Jr.' com senha 503 na fila [Normal] pos=3
+    CADASTRADO 'Jose dos Santos de 2504 Jr.' com senha 504 na fila [Normal] pos=4
+    CADASTRADO 'Jose dos Santos de 2505 Jr.' com senha 505 na fila [Prioridade] pos=5
+    CADASTRADO 'Jose dos Santos de 2506 Jr.' com senha 506 na fila [Prioridade] pos=6
+    CADASTRADO 'Jose dos Santos de 2507 Jr.' com senha 507 na fila [Prioridade] pos=7
+    CADASTRADO 'Jose dos Santos de 2508 Jr.' com senha 508 na fila [Prioridade] pos=8
+
+---------- ---------- ---------- ----------
+
+Painel
+Tamanho da fila:......   8
+Normal:...............   4
+Prioritario: .........   4
+
+Fila (8 clientes):
+
+#  1: [Jose dos Santos de 2501 Jr.], Senha 501 [N]
+#  2: [Jose dos Santos de 2502 Jr.], Senha 502 [N]
+#  3: [Jose dos Santos de 2503 Jr.], Senha 503 [N]
+#  4: [Jose dos Santos de 2504 Jr.], Senha 504 [N]
+#  5: [Jose dos Santos de 2505 Jr.], Senha 505 [P]
+#  6: [Jose dos Santos de 2506 Jr.], Senha 506 [P]
+#  7: [Jose dos Santos de 2507 Jr.], Senha 507 [P]
+#  8: [Jose dos Santos de 2508 Jr.], Senha 508 [P]
+
+---------- ---------- ---------- ----------
+    ATENDENDO [Jose dos Santos de 2505 Jr.] senha 505 [PRIORIDADE]
+    ATENDENDO [Jose dos Santos de 2501 Jr.] senha 501 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2502 Jr.] senha 502 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2506 Jr.] senha 506 [PRIORIDADE]
+    ATENDENDO [Jose dos Santos de 2503 Jr.] senha 503 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2504 Jr.] senha 504 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2507 Jr.] senha 507 [PRIORIDADE]
+
+---------- ---------- ---------- ----------
+
+Painel
+Tamanho da fila:......   1
+Normal:...............   0
+Prioritario: .........   1
+
+Fila (1 clientes):
+
+#  1: [Jose dos Santos de 2508 Jr.], Senha 508 [P]
+
+Ja atendidos: 7. Ultimas 5 senhas chamadas: 507  504  503  506  502
+
+Ultima: 507
+
+---------- ---------- ---------- ----------
+
+M:\forum>
+
+
+M:\forum>fila NNNNPPPPLAAAAAAAAL
+***** iniciando expediente CAPACIDADE=20 CLIENTES *****
+
+
+
+***** Rotina=[NNNNPPPPLAAAAAAAAL] *****
+
+Total de acoes: 18
+
+    CADASTRADO 'Jose dos Santos de 2501 Jr.' com senha 501 na fila [Normal] pos=1
+    CADASTRADO 'Jose dos Santos de 2502 Jr.' com senha 502 na fila [Normal] pos=2
+    CADASTRADO 'Jose dos Santos de 2503 Jr.' com senha 503 na fila [Normal] pos=3
+    CADASTRADO 'Jose dos Santos de 2504 Jr.' com senha 504 na fila [Normal] pos=4
+    CADASTRADO 'Jose dos Santos de 2505 Jr.' com senha 505 na fila [Prioridade] pos=5
+    CADASTRADO 'Jose dos Santos de 2506 Jr.' com senha 506 na fila [Prioridade] pos=6
+    CADASTRADO 'Jose dos Santos de 2507 Jr.' com senha 507 na fila [Prioridade] pos=7
+    CADASTRADO 'Jose dos Santos de 2508 Jr.' com senha 508 na fila [Prioridade] pos=8
+
+---------- ---------- ---------- ----------
+
+Painel
+Tamanho da fila:......   8
+Normal:...............   4
+Prioritario: .........   4
+
+Fila (8 clientes):
+
+#  1: [Jose dos Santos de 2501 Jr.], Senha 501 [N]
+#  2: [Jose dos Santos de 2502 Jr.], Senha 502 [N]
+#  3: [Jose dos Santos de 2503 Jr.], Senha 503 [N]
+#  4: [Jose dos Santos de 2504 Jr.], Senha 504 [N]
+#  5: [Jose dos Santos de 2505 Jr.], Senha 505 [P]
+#  6: [Jose dos Santos de 2506 Jr.], Senha 506 [P]
+#  7: [Jose dos Santos de 2507 Jr.], Senha 507 [P]
+#  8: [Jose dos Santos de 2508 Jr.], Senha 508 [P]
+
+---------- ---------- ---------- ----------
+    ATENDENDO [Jose dos Santos de 2505 Jr.] senha 505 [PRIORIDADE]
+    ATENDENDO [Jose dos Santos de 2501 Jr.] senha 501 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2502 Jr.] senha 502 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2506 Jr.] senha 506 [PRIORIDADE]
+    ATENDENDO [Jose dos Santos de 2503 Jr.] senha 503 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2504 Jr.] senha 504 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2507 Jr.] senha 507 [PRIORIDADE]
+    ATENDENDO [Jose dos Santos de 2508 Jr.] senha 508 [PRIORIDADE]
+
+---------- ---------- ---------- ----------
+
+Painel
+Fila Vazia
+
+Ja atendidos: 8. Ultimas 5 senhas chamadas: 508  507  504  503  506
+
+Ultima: 508
+
+---------- ---------- ---------- ----------
+
+M:\forum>
+
+teste novo entram 10 6 n 4 p saem 11
+
+
+
+***** iniciando expediente CAPACIDADE=20 CLIENTES *****
+
+***** Rotina=[LNNNNNNPPPPLAAAAAAAAAAAL] Capacidade 20 *****
+
+Total de acoes: 24
+
+
+---------- ---------- ---------- ----------
+
+Painel
+Fila Vazia
+
+---------- ---------- ---------- ----------
+    CADASTRADO 'Jose dos Santos de 2501 Jr.' com senha 501 na fila [Normal] pos=1
+    CADASTRADO 'Jose dos Santos de 2502 Jr.' com senha 502 na fila [Normal] pos=2
+    CADASTRADO 'Jose dos Santos de 2503 Jr.' com senha 503 na fila [Normal] pos=3
+    CADASTRADO 'Jose dos Santos de 2504 Jr.' com senha 504 na fila [Normal] pos=4
+    CADASTRADO 'Jose dos Santos de 2505 Jr.' com senha 505 na fila [Normal] pos=5
+    CADASTRADO 'Jose dos Santos de 2506 Jr.' com senha 506 na fila [Normal] pos=6
+    CADASTRADO 'Jose dos Santos de 2507 Jr.' com senha 507 na fila [Prioridade] pos=7
+    CADASTRADO 'Jose dos Santos de 2508 Jr.' com senha 508 na fila [Prioridade] pos=8
+    CADASTRADO 'Jose dos Santos de 2509 Jr.' com senha 509 na fila [Prioridade] pos=9
+    CADASTRADO 'Jose dos Santos de 2510 Jr.' com senha 510 na fila [Prioridade] pos=10
+
+---------- ---------- ---------- ----------
+
+Painel
+Tamanho da fila:......  10
+Normal:...............   6
+Prioritario: .........   4
+
+Fila (10 clientes):
+
+#  1: [Jose dos Santos de 2501 Jr.], Senha 501 [N]
+#  2: [Jose dos Santos de 2502 Jr.], Senha 502 [N]
+#  3: [Jose dos Santos de 2503 Jr.], Senha 503 [N]
+#  4: [Jose dos Santos de 2504 Jr.], Senha 504 [N]
+#  5: [Jose dos Santos de 2505 Jr.], Senha 505 [N]
+#  6: [Jose dos Santos de 2506 Jr.], Senha 506 [N]
+#  7: [Jose dos Santos de 2507 Jr.], Senha 507 [P]
+#  8: [Jose dos Santos de 2508 Jr.], Senha 508 [P]
+#  9: [Jose dos Santos de 2509 Jr.], Senha 509 [P]
+# 10: [Jose dos Santos de 2510 Jr.], Senha 510 [P]
+
+---------- ---------- ---------- ----------
+    ATENDENDO [Jose dos Santos de 2507 Jr.] senha 507 [PRIORIDADE]
+    ATENDENDO [Jose dos Santos de 2501 Jr.] senha 501 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2502 Jr.] senha 502 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2508 Jr.] senha 508 [PRIORIDADE]
+    ATENDENDO [Jose dos Santos de 2503 Jr.] senha 503 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2504 Jr.] senha 504 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2509 Jr.] senha 509 [PRIORIDADE]
+    ATENDENDO [Jose dos Santos de 2505 Jr.] senha 505 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2506 Jr.] senha 506 [NORMAL]
+    ATENDENDO [Jose dos Santos de 2510 Jr.] senha 510 [PRIORIDADE]
+    ATENDIMENTO: Fila Vazia
+
+---------- ---------- ---------- ----------
+
+Painel
+Fila Vazia
+
+Ja atendidos: 10. Ultimas 5 senhas chamadas: 510  506  505  509  504
+
+Ultima: 510
+
+---------- ---------- ---------- ----------
+
+
+pdf ime sobre PQ https://www.ime.usp.br/~song/mac5710/slides/03prior.pdf
+
+PQ em java aula em portugues https://www.ime.usp.br/~song/mac5710/slides/03prior.pdf
+
+PQ heap sort como fila d eprioridade https://www.youtube.com/watch?v=B7hVxCmfPtM&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=4
+
+
+MIT OpenCourseWare
+
+
+
+
+

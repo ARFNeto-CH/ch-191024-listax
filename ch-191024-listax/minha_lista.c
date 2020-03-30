@@ -84,7 +84,7 @@ int			insere_ao_final(Registro* r, Lista** ppLista)
 }	// end insere_registro()
 
 
-int mostra(int(*motra_um)(Registro*), Lista** lista)
+int mostra(int(*mostra_um)(Registro*), Lista** lista)
 {
 	int		n = 0;					// conta os itens apagados
 	Lista* p = *lista;

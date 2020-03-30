@@ -151,7 +151,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ch-191025v.c" />
     <ClCompile Include="minha_lista_v.c" />
   </ItemGroup>
   <ItemGroup>
